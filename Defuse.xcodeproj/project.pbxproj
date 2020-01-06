@@ -14,6 +14,7 @@
 		3F7D905B23C3C3B5006F9972 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F7D905A23C3C3B5006F9972 /* Assets.xcassets */; };
 		3F7D905E23C3C3B5006F9972 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7D905C23C3C3B5006F9972 /* LaunchScreen.storyboard */; };
 		3F7D906623C3DBF3006F9972 /* FidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D906523C3DBF3006F9972 /* FidgetViewController.swift */; };
+		3F7D906923C3EB7D006F9972 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7D906823C3EB7D006F9972 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3F7D905D23C3C3B5006F9972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F7D905F23C3C3B5006F9972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F7D906523C3DBF3006F9972 /* FidgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FidgetViewController.swift; sourceTree = "<group>"; };
+		3F7D906823C3EB7D006F9972 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7D906923C3EB7D006F9972 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 			children = (
 				3F7D905023C3C3B3006F9972 /* Defuse */,
 				3F7D904F23C3C3B3006F9972 /* Products */,
+				3F7D906723C3EB7D006F9972 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +72,14 @@
 				3F7D905F23C3C3B5006F9972 /* Info.plist */,
 			);
 			path = Defuse;
+			sourceTree = "<group>";
+		};
+		3F7D906723C3EB7D006F9972 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F7D906823C3EB7D006F9972 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

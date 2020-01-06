@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class FidgetViewController: UIViewController {
-
+    @IBOutlet weak var switchOne: UISwitch!
+    @IBOutlet weak var stepperOne: UIStepper!
+    @IBOutlet weak var sliderOne: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

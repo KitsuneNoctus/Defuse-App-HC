@@ -103,14 +103,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stepper>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="iJ2-YQ-DU9">
-                                <rect key="frame" x="142" y="262" width="118" height="30"/>
+                                <rect key="frame" x="49" y="364" width="316" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="play" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bmU-n8-W0r">
+                                <rect key="frame" x="51" y="463" width="57" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="tYj-Lk-9AT"/>
                     </view>
                     <navigationItem key="navigationItem" id="ugI-bn-Zhk"/>
+                    <connections>
+                        <outlet property="sliderOne" destination="iJ2-YQ-DU9" id="crp-t2-34Z"/>
+                        <outlet property="stepperOne" destination="iHG-eT-cYp" id="jFB-wT-rMA"/>
+                        <outlet property="switchOne" destination="7fg-2J-wis" id="uHe-So-ySG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEX-ou-uKL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -135,4 +144,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="play" catalog="system" width="60" height="64"/>
+    </resources>
 </document>
