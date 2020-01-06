@@ -15,6 +15,7 @@ class FidgetViewController: UIViewController {
     @IBOutlet weak var sliderOne: UISlider!
     
     var soundEffect: AVAudioPlayer = AVAudioPlayer()
+    var redValue = CGFloat.random(in:0..<1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,7 @@ class FidgetViewController: UIViewController {
     }
     @IBAction func useSliderOne(_ sender: UISlider) {
         var sliderOneValue = CGFloat(sender.value)
-        var redValue = CGFloat.random(in:0..<1)
+//        var redValue = CGFloat.random(in:0..<1)
         view.backgroundColor = UIColor(red: redValue, green: 1-CGFloat(sender.value), blue: CGFloat(sender.value), alpha: 1)
     }
     
