@@ -14,7 +14,9 @@ class FidgetViewController: UIViewController {
     @IBOutlet weak var stepperOne: UIStepper!
     @IBOutlet weak var sliderOne: UISlider!
     
-    var soundEffect: AVAudioPlayer = AVAudioPlayer()
+    var soundEffect: AVAudioPlayer?
+//    var soundEffect: AVAudioPlayer = AVAudioPlayer()
+    
     var redValue = CGFloat.random(in:0..<1)
     
     override func viewDidLoad() {
@@ -26,6 +28,17 @@ class FidgetViewController: UIViewController {
 //        var sliderOneValue = CGFloat(sender.value)
 //        var redValue = CGFloat.random(in:0..<1)
         view.backgroundColor = UIColor(red: redValue, green: 1-CGFloat(sender.value), blue: CGFloat(sender.value), alpha: 1)
+    }
+    @IBAction func switchValueChanged(_ sender: UISwitch) {
+        let path = Bundle.main.path(forResource: "switchSound.mp3", ofType:nil)!
+        let url = URL(fileURLWithPath: path)
+
+        do {
+            soundEffect = try AVAudioPlayer(contentsOf: url)
+            soundEffect?.play()
+        } catch {
+            // couldn't load file :(
+        }
     }
     
 
