@@ -14,10 +14,15 @@ class FidgetViewController: UIViewController {
     @IBOutlet weak var stepperOne: UIStepper!
     @IBOutlet weak var sliderOne: UISlider!
     
+    var soundEffect: AVAudioPlayer = AVAudioPlayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    @IBAction func useSliderOne(_ sender: Any) {
+        
     }
     
 
