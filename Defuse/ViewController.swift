@@ -14,6 +14,7 @@ class ViewController: UIViewController {
 /* Originally for a picker menu */
 //    let items = ["Fidget","Anxiety","..."]
 //    var selection:String!
+    @IBOutlet weak var fidgetButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
