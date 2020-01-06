@@ -22,7 +22,9 @@ class FidgetViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func useSliderOne(_ sender: UISlider) {
-        view.backgroundColor = UIColor(red: CGFloat(sender.value), green: CGFloat(sender.value), blue: CGFloat(sender.value), alpha: 1)
+        var sliderOneValue = CGFloat(sender.value)
+        var redValue = CGFloat.random(in:0..<1)
+        view.backgroundColor = UIColor(red: redValue, green: 1-CGFloat(sender.value), blue: CGFloat(sender.value), alpha: 1)
     }
     
 
