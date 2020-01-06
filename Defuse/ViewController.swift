@@ -9,9 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let items = ["Fidget","Anxiety","..."]
-    var selection:String!
-    @IBOutlet weak var menuPicker: UIPickerView!
+    /* View Controller for the app */
+    
+/* Originally for a picker menu */
+//    let items = ["Fidget","Anxiety","..."]
+//    var selection:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
