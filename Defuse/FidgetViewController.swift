@@ -10,9 +10,15 @@ import UIKit
 import AVFoundation
 
 class FidgetViewController: UIViewController {
+    //First set of buttons
     @IBOutlet weak var switchOne: UISwitch!
     @IBOutlet weak var stepperOne: UIStepper!
     @IBOutlet weak var sliderOne: UISlider!
+    //Second Set (Plus stuff)
+    @IBOutlet weak var aButton: UIButton!
+    @IBOutlet weak var aButtonLabel: UILabel!
+    
+    let aLabelWordList = ["They're","There","Their","your","you're","bear","bare","angle","angel"]
     
 //    var lastStepperOneValue: Int?
     var soundEffect: AVAudioPlayer?
@@ -46,6 +52,10 @@ class FidgetViewController: UIViewController {
 //        } else if Int(stepperOne.value) > lastStepperOneValue{
 //            print("Bye")
 //        }
+    }
+    @IBAction func aButtonPressed(_ sender: Any) {
+        var textBit = aLabelWordList[1]
+        aButtonLabel.text = textBit
     }
     
 
