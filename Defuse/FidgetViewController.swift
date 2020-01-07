@@ -40,6 +40,11 @@ class FidgetViewController: UIViewController {
             // couldn't load file :(
         }
     }
+    @IBAction func useStepperOne(_ sender: UIStepper) {
+//        if stepperOne.plusMinusState == {
+//            print("Hi")
+//        }
+    }
     
 
     /*
