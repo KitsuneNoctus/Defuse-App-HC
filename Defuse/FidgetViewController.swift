@@ -14,13 +14,15 @@ class FidgetViewController: UIViewController {
     @IBOutlet weak var stepperOne: UIStepper!
     @IBOutlet weak var sliderOne: UISlider!
     
+    var lastStepperOneValue: Int?
+    
     var soundEffect: AVAudioPlayer?
-//    var soundEffect: AVAudioPlayer = AVAudioPlayer()
     
     var redValue = CGFloat.random(in:0..<1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var lastStepperOneValue = Int(stepperOne.value)
 
         // Do any additional setup after loading the view.
     }
@@ -41,8 +43,10 @@ class FidgetViewController: UIViewController {
         }
     }
     @IBAction func useStepperOne(_ sender: UIStepper) {
-//        if stepperOne.plusMinusState == {
+//        if Int(stepperOne.value) < lastStepperOneValue{
 //            print("Hi")
+//        } else if Int(stepperOne.value) > lastStepperOneValue{
+//            print("Bye")
 //        }
     }
     
