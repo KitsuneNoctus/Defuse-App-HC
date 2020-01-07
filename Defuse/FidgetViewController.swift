@@ -14,15 +14,13 @@ class FidgetViewController: UIViewController {
     @IBOutlet weak var stepperOne: UIStepper!
     @IBOutlet weak var sliderOne: UISlider!
     
-    var lastStepperOneValue: Int?
-    
+//    var lastStepperOneValue: Int?
     var soundEffect: AVAudioPlayer?
-    
     var redValue = CGFloat.random(in:0..<1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var lastStepperOneValue = Int(stepperOne.value)
+//        var lastStepperOneValue = Int(stepperOne.value)
 
         // Do any additional setup after loading the view.
     }
