@@ -20,11 +20,6 @@ class FidgetViewController: UIViewController {
     //Second Set (Plus stuff)
     @IBOutlet weak var aButton: UIButton!
     @IBOutlet weak var aButtonLabel: UILabel!
-    //Bubbles---------------
-    @IBOutlet var bubbleTap: UITapGestureRecognizer!
-    
-    //Key View Items =-=-=-=-=-=-=-=-=-=-=-=-=
-    
     
     //IBOutlest for screens views--------------
     @IBOutlet weak var BubbleView: UIView!
@@ -37,9 +32,6 @@ class FidgetViewController: UIViewController {
     //To use for sound effects with buttons---
     var soundEffect: AVAudioPlayer?
     var redValue = CGFloat.random(in:0..<1)
-    
-    //Timer
-    var timer:Timer!
     
 //    =================================================
     override func viewDidLoad() {
@@ -103,18 +95,6 @@ class FidgetViewController: UIViewController {
             keyView.alpha = 1
         }
     }
-    @IBAction func bubbleTapped(_ sender: Any) {
-        let path = Bundle.main.path(forResource: "crackSoud.mp3", ofType:nil)!
-        let url = URL(fileURLWithPath: path)
-
-        do {
-            soundEffect = try AVAudioPlayer(contentsOf: url)
-            soundEffect?.play()
-        } catch {
-            // couldn't load file :(
-        }
-    }
-    
 
     /*
     // MARK: - Navigation

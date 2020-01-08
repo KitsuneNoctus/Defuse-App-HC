@@ -1,5 +1,5 @@
 //
-//  KeySubViewController.swift
+//  BubbleSubViewController.swift
 //  Defuse
 //
 //  Created by Henry Calderon on 1/8/20.
@@ -7,16 +7,16 @@
 //
 
 import UIKit
-import AVFoundation
 
-class KeySubViewController: FidgetViewController {
+class BubbleSubViewController: FidgetViewController {
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
 
         // Do any additional setup after loading the view.
-    }
 
     /*
     // MARK: - Navigation
