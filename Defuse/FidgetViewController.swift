@@ -10,13 +10,18 @@ import UIKit
 import AVFoundation
 
 class FidgetViewController: UIViewController {
+    /* Fidget button screen with multiple buttons to press and play with */
     //First set of buttons
     @IBOutlet weak var switchOne: UISwitch!
     @IBOutlet weak var stepperOne: UIStepper!
     @IBOutlet weak var sliderOne: UISlider!
+    @IBOutlet weak var viewSegmentControl: UISegmentedControl!
     //Second Set (Plus stuff)
     @IBOutlet weak var aButton: UIButton!
     @IBOutlet weak var aButtonLabel: UILabel!
+    //IBOutlest for screens views
+    @IBOutlet weak var BubbleView: UIView!
+    @IBOutlet weak var keyView: UIView!
     
     let aLabelWordList = ["They're","There","Their","your","you're","bear","bare","angle","angel"]
     
@@ -54,8 +59,17 @@ class FidgetViewController: UIViewController {
 //        }
     }
     @IBAction func aButtonPressed(_ sender: Any) {
-        var textBit = aLabelWordList[1]
+        let textBit = aLabelWordList[Int.random(in: 0..<aLabelWordList.count)]
         aButtonLabel.text = textBit
+    }
+    @IBAction func viewSegmentControlUsed(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0{
+            BubbleView.alpha == 0.5
+            keyView.alpha == 0
+        }else{
+            BubbleView.alpha == 0
+            keyView.alpha == 0.5
+        }
     }
     
 

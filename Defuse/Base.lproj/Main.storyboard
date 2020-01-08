@@ -111,10 +111,6 @@
                                     <action selector="useSliderOne:" destination="bdD-9G-fyz" eventType="valueChanged" id="6ow-kE-Ray"/>
                                 </connections>
                             </slider>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="play" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bmU-n8-W0r">
-                                <rect key="frame" x="58" y="559.5" width="57" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0Z-bI-odT">
                                 <rect key="frame" x="51" y="346" width="64" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -131,32 +127,43 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="95m-1p-O1I">
-                                <rect key="frame" x="87" y="692" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="ESZ-jX-ple"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="Lpj-Yb-spb"/>
-                            </scrollView>
                             <textField hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type Here..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7nh-Xn-Ux6">
                                 <rect key="frame" x="51" y="296" width="312" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ov1-wu-crL">
+                                <rect key="frame" x="20" y="404" width="374" height="392"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="q85-a7-aWD" kind="embed" id="1Cf-1S-T1z"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bO1-mI-FaF">
+                                <rect key="frame" x="20" y="404" width="374" height="392"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="Byn-UR-au0" kind="embed" id="sf6-aD-TCL"/>
+                                </connections>
+                            </containerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="svo-TU-MfU">
+                                <rect key="frame" x="125" y="110" width="165" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Bubble"/>
+                                    <segment title="Keys"/>
+                                </segments>
+                                <connections>
+                                    <action selector="viewSegmentControlUsed:" destination="bdD-9G-fyz" eventType="valueChanged" id="mMg-qa-aEH"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="tYj-Lk-9AT"/>
                     </view>
                     <navigationItem key="navigationItem" id="ugI-bn-Zhk">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="svo-TU-MfU">
-                            <rect key="frame" x="141.5" y="6" width="131" height="32"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <segments>
-                                <segment title="First"/>
-                                <segment title="Second"/>
-                            </segments>
-                        </segmentedControl>
                     </navigationItem>
                     <connections>
                         <outlet property="aButton" destination="l0Z-bI-odT" id="BwL-Y1-wR4"/>
@@ -164,6 +171,7 @@
                         <outlet property="sliderOne" destination="iJ2-YQ-DU9" id="crp-t2-34Z"/>
                         <outlet property="stepperOne" destination="iHG-eT-cYp" id="jFB-wT-rMA"/>
                         <outlet property="switchOne" destination="7fg-2J-wis" id="uHe-So-ySG"/>
+                        <outlet property="viewSegmentControl" destination="svo-TU-MfU" id="CRl-IT-aRv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEX-ou-uKL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -188,8 +196,39 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
+        <!--Fidget View Controller-->
+        <scene sceneID="ucT-Q8-S5c">
+            <objects>
+                <viewController id="q85-a7-aWD" customClass="FidgetViewController" customModule="Defuse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.5" contentMode="scaleToFill" id="xjC-sW-RZE">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="392"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.79794647300318755" green="0.95933517339684804" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="BubbleView" destination="xjC-sW-RZE" id="XC0-Iu-WqM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mai-dx-hax" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2271" y="688"/>
+        </scene>
+        <!--Fidget View Controller-->
+        <scene sceneID="VJ3-Q0-gmY">
+            <objects>
+                <viewController id="Byn-UR-au0" customClass="FidgetViewController" customModule="Defuse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.5" contentMode="scaleToFill" id="sZD-g3-Gmc">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="392"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.92424682365347266" blue="0.92884442551486734" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="keyView" destination="sZD-g3-Gmc" id="Fxb-1X-nYt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vWU-3E-jKI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1593" y="688"/>
+        </scene>
     </scenes>
-    <resources>
-        <image name="play" catalog="system" width="60" height="64"/>
-    </resources>
 </document>
