@@ -19,9 +19,9 @@ class FidgetViewController: UIViewController {
     //Second Set (Plus stuff)
     @IBOutlet weak var aButton: UIButton!
     @IBOutlet weak var aButtonLabel: UILabel!
-    //IBOutlest for screens views
-//    @IBOutlet weak var BubbleView: UIView!
-//    @IBOutlet weak var keyView: UIView!
+    //IBOutlest for screens views--------------
+    @IBOutlet weak var BubbleView: UIView!
+    @IBOutlet weak var keyView: UIView!
     
     let aLabelWordList = ["They're","There","Their","your","you're","bear","bare","angle","angel"]
     
