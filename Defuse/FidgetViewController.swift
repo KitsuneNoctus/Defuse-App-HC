@@ -21,14 +21,16 @@ class FidgetViewController: UIViewController {
     @IBOutlet weak var aButton: UIButton!
     @IBOutlet weak var aButtonLabel: UILabel!
     //Bubbles---------------
+    @IBOutlet var bubbleTap: UITapGestureRecognizer!
+    
+    //Key View Items =-=-=-=-=-=-=-=-=-=-=-=-=
+    
     
     //IBOutlest for screens views--------------
     @IBOutlet weak var BubbleView: UIView!
     @IBOutlet weak var keyView: UIView!
     
     //Text field stuff-----------
-    @IBOutlet weak var textField: UITextField!
-    
     let aLabelWordList = ["They're","There","Their","your","you're","bear","bare","angle","angel"]
     
 //    var lastStepperOneValue: Int?
@@ -36,6 +38,10 @@ class FidgetViewController: UIViewController {
     var soundEffect: AVAudioPlayer?
     var redValue = CGFloat.random(in:0..<1)
     
+    //Timer
+    var timer:Timer!
+    
+//    =================================================
     override func viewDidLoad() {
         super.viewDidLoad()
 //        var lastStepperOneValue = Int(stepperOne.value)
@@ -95,6 +101,17 @@ class FidgetViewController: UIViewController {
         }else{
             BubbleView.alpha = 0
             keyView.alpha = 1
+        }
+    }
+    @IBAction func bubbleTapped(_ sender: Any) {
+        let path = Bundle.main.path(forResource: "crackSoud.mp3", ofType:nil)!
+        let url = URL(fileURLWithPath: path)
+
+        do {
+            soundEffect = try AVAudioPlayer(contentsOf: url)
+            soundEffect?.play()
+        } catch {
+            // couldn't load file :(
         }
     }
     

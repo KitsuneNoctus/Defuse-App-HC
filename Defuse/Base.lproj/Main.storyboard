@@ -176,7 +176,6 @@
                         <outlet property="sliderOne" destination="iJ2-YQ-DU9" id="crp-t2-34Z"/>
                         <outlet property="stepperOne" destination="iHG-eT-cYp" id="jFB-wT-rMA"/>
                         <outlet property="switchOne" destination="7fg-2J-wis" id="uHe-So-ySG"/>
-                        <outlet property="textField" destination="7nh-Xn-Ux6" id="cmR-wK-IGB"/>
                         <outlet property="viewSegmentControl" destination="svo-TU-MfU" id="CRl-IT-aRv"/>
                     </connections>
                 </viewController>
@@ -340,7 +339,6 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tsq-ui-LtX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="JOI-EK-2Ri"/>
             </objects>
             <point key="canvasLocation" x="2496" y="404"/>
         </scene>

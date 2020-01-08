@@ -1,5 +1,5 @@
 //
-//  AnxietyViewController.swift
+//  KeySubViewController.swift
 //  Defuse
 //
 //  Created by Henry Calderon on 1/8/20.
@@ -8,19 +8,12 @@
 
 import UIKit
 
-class AnxietyViewController: UIViewController {
+class KeySubViewController: FidgetViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateColor()
-//        view.backgroundColor = UIColor(red:CGFloat.random(in:0..<1),green:0,blue:0.5,alpha: 1)
 
         // Do any additional setup after loading the view.
-    }
-    
-    func updateColor(){
-        
-        view.backgroundColor = UIColor(red:CGFloat.random(in:0..<1),green:0,blue:0.5,alpha: 1)
     }
     
 
