@@ -26,6 +26,9 @@ class FidgetViewController: UIViewController {
     @IBOutlet weak var BubbleView: UIView!
     @IBOutlet weak var keyView: UIView!
     
+    //Text field stuff-----------
+    @IBOutlet weak var textField: UITextField!
+    
     let aLabelWordList = ["They're","There","Their","your","you're","bear","bare","angle","angel"]
     
 //    var lastStepperOneValue: Int?
@@ -40,6 +43,7 @@ class FidgetViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func useSliderOne(_ sender: UISlider) {
+        
 //        var sliderOneValue = CGFloat(sender.value)
 //        var redValue = CGFloat.random(in:0..<1)
         view.backgroundColor = UIColor(red: redValue, green: 1-CGFloat(sender.value), blue: CGFloat(sender.value), alpha: 1)

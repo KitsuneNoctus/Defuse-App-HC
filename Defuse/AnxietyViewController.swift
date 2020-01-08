@@ -12,8 +12,14 @@ class AnxietyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateColor()
+//        view.backgroundColor = UIColor(red:CGFloat.random(in:0..<1),green:0,blue:0.5,alpha: 1)
 
         // Do any additional setup after loading the view.
+    }
+    
+    func updateColor(){
+        view.backgroundColor = UIColor(red:CGFloat.random(in:0..<1),green:0,blue:0.5,alpha: 1)
     }
     
 

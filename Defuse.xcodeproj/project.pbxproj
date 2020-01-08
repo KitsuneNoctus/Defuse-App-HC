@@ -53,7 +53,6 @@
 		3F7D904523C3C3B3006F9972 = {
 			isa = PBXGroup;
 			children = (
-				3F7D906C23C64F38006F9972 /* AnxietyViewController.swift */,
 				3F7D905023C3C3B3006F9972 /* Defuse */,
 				3F7D904F23C3C3B3006F9972 /* Products */,
 				3F7D906723C3EB7D006F9972 /* Frameworks */,
@@ -76,6 +75,7 @@
 				3F7D905323C3C3B3006F9972 /* SceneDelegate.swift */,
 				3F7D905523C3C3B3006F9972 /* ViewController.swift */,
 				3F7D906523C3DBF3006F9972 /* FidgetViewController.swift */,
+				3F7D906C23C64F38006F9972 /* AnxietyViewController.swift */,
 				3F7D905723C3C3B3006F9972 /* Main.storyboard */,
 				3F7D907023C6629C006F9972 /* crackSoud.mp3 */,
 				3F7D906E23C65F58006F9972 /* clickSound.mp3 */,

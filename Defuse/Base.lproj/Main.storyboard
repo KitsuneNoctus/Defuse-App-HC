@@ -130,10 +130,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type Here..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7nh-Xn-Ux6">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type Here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7nh-Xn-Ux6">
                                 <rect key="frame" x="51" y="296" width="312" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="svo-TU-MfU">
@@ -176,6 +176,7 @@
                         <outlet property="sliderOne" destination="iJ2-YQ-DU9" id="crp-t2-34Z"/>
                         <outlet property="stepperOne" destination="iHG-eT-cYp" id="jFB-wT-rMA"/>
                         <outlet property="switchOne" destination="7fg-2J-wis" id="uHe-So-ySG"/>
+                        <outlet property="textField" destination="7nh-Xn-Ux6" id="cmR-wK-IGB"/>
                         <outlet property="viewSegmentControl" destination="svo-TU-MfU" id="CRl-IT-aRv"/>
                     </connections>
                 </viewController>
