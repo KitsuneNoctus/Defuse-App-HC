@@ -22,6 +22,7 @@
 		3F7D907323C67D7B006F9972 /* KeySubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D907223C67D7B006F9972 /* KeySubViewController.swift */; };
 		3F7D907523C68203006F9972 /* BubbleSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D907423C68203006F9972 /* BubbleSubViewController.swift */; };
 		3F7D907823C68ABF006F9972 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D907723C68ABF006F9972 /* CircleImageView.swift */; };
+		3F7D907A23C69028006F9972 /* BubbleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D907923C69028006F9972 /* BubbleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		3F7D907223C67D7B006F9972 /* KeySubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeySubViewController.swift; sourceTree = "<group>"; };
 		3F7D907423C68203006F9972 /* BubbleSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSubViewController.swift; sourceTree = "<group>"; };
 		3F7D907723C68ABF006F9972 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		3F7D907923C69028006F9972 /* BubbleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				3F7D907723C68ABF006F9972 /* CircleImageView.swift */,
+				3F7D907923C69028006F9972 /* BubbleButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7D907A23C69028006F9972 /* BubbleButton.swift in Sources */,
 				3F7D907823C68ABF006F9972 /* CircleImageView.swift in Sources */,
 				3F7D905623C3C3B3006F9972 /* ViewController.swift in Sources */,
 				3F7D907523C68203006F9972 /* BubbleSubViewController.swift in Sources */,
