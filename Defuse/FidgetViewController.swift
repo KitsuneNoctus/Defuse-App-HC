@@ -15,6 +15,7 @@ class FidgetViewController: UIViewController {
     @IBOutlet weak var switchOne: UISwitch!
     @IBOutlet weak var stepperOne: UIStepper!
     @IBOutlet weak var sliderOne: UISlider!
+//    https://www.youtube.com/watch?v=A6vxDDAUj2o
     @IBOutlet weak var viewSegmentControl: UISegmentedControl!
     //Second Set (Plus stuff)
     @IBOutlet weak var aButton: UIButton!
@@ -26,6 +27,7 @@ class FidgetViewController: UIViewController {
     let aLabelWordList = ["They're","There","Their","your","you're","bear","bare","angle","angel"]
     
 //    var lastStepperOneValue: Int?
+    //To use for sound effects with buttons---
     var soundEffect: AVAudioPlayer?
     var redValue = CGFloat.random(in:0..<1)
     
