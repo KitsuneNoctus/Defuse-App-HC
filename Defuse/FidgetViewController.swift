@@ -56,6 +56,15 @@ class FidgetViewController: UIViewController {
         }
     }
     @IBAction func useStepperOne(_ sender: UIStepper) {
+        let path = Bundle.main.path(forResource: "clickSound.mp3", ofType:nil)!
+        let url = URL(fileURLWithPath: path)
+
+        do {
+            soundEffect = try AVAudioPlayer(contentsOf: url)
+            soundEffect?.play()
+        } catch {
+            // couldn't load file :(
+        }
 //        if Int(stepperOne.value) < lastStepperOneValue{
 //            print("Hi")
 //        } else if Int(stepperOne.value) > lastStepperOneValue{
@@ -63,6 +72,15 @@ class FidgetViewController: UIViewController {
 //        }
     }
     @IBAction func aButtonPressed(_ sender: Any) {
+        let path = Bundle.main.path(forResource: "crackSoud.mp3", ofType:nil)!
+        let url = URL(fileURLWithPath: path)
+
+        do {
+            soundEffect = try AVAudioPlayer(contentsOf: url)
+            soundEffect?.play()
+        } catch {
+            // couldn't load file :(
+        }
         let textBit = aLabelWordList[Int.random(in: 0..<aLabelWordList.count)]
         aButtonLabel.text = textBit
     }

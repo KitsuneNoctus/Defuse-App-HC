@@ -17,6 +17,8 @@
 		3F7D906923C3EB7D006F9972 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7D906823C3EB7D006F9972 /* AVFoundation.framework */; };
 		3F7D906B23C3ECEC006F9972 /* switchSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F7D906A23C3ECEC006F9972 /* switchSound.mp3 */; };
 		3F7D906D23C64F38006F9972 /* AnxietyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D906C23C64F38006F9972 /* AnxietyViewController.swift */; };
+		3F7D906F23C65F59006F9972 /* clickSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F7D906E23C65F58006F9972 /* clickSound.mp3 */; };
+		3F7D907123C6629C006F9972 /* crackSoud.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F7D907023C6629C006F9972 /* crackSoud.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		3F7D906823C3EB7D006F9972 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3F7D906A23C3ECEC006F9972 /* switchSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = switchSound.mp3; path = ../../switchSound.mp3; sourceTree = "<group>"; };
 		3F7D906C23C64F38006F9972 /* AnxietyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyViewController.swift; sourceTree = "<group>"; };
+		3F7D906E23C65F58006F9972 /* clickSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = clickSound.mp3; path = ../../../../../Downloads/clickSound.mp3; sourceTree = "<group>"; };
+		3F7D907023C6629C006F9972 /* crackSoud.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = crackSoud.mp3; path = ../../../../../Downloads/crackSoud.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 				3F7D905523C3C3B3006F9972 /* ViewController.swift */,
 				3F7D906523C3DBF3006F9972 /* FidgetViewController.swift */,
 				3F7D905723C3C3B3006F9972 /* Main.storyboard */,
+				3F7D907023C6629C006F9972 /* crackSoud.mp3 */,
+				3F7D906E23C65F58006F9972 /* clickSound.mp3 */,
 				3F7D905A23C3C3B5006F9972 /* Assets.xcassets */,
 				3F7D905C23C3C3B5006F9972 /* LaunchScreen.storyboard */,
 				3F7D905F23C3C3B5006F9972 /* Info.plist */,
@@ -146,9 +152,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7D906F23C65F59006F9972 /* clickSound.mp3 in Resources */,
 				3F7D906B23C3ECEC006F9972 /* switchSound.mp3 in Resources */,
 				3F7D905E23C3C3B5006F9972 /* LaunchScreen.storyboard in Resources */,
 				3F7D905B23C3C3B5006F9972 /* Assets.xcassets in Resources */,
+				3F7D907123C6629C006F9972 /* crackSoud.mp3 in Resources */,
 				3F7D905923C3C3B3006F9972 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
