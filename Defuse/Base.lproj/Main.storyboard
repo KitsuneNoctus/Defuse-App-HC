@@ -43,6 +43,9 @@
                                 <state key="normal" title="Anxiety">
                                     <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="e51-w7-iS3" kind="show" id="VIw-Hr-wKM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8c-x1-9ij">
                                 <rect key="frame" x="178" y="536" width="58" height="39"/>
@@ -178,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEX-ou-uKL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1846" y="138"/>
+            <point key="canvasLocation" x="2041" y="-116"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="24B-En-jXU">
@@ -338,7 +341,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tsq-ui-LtX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="JOI-EK-2Ri"/>
             </objects>
-            <point key="canvasLocation" x="2212" y="654"/>
+            <point key="canvasLocation" x="2496" y="404"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xJT-Zs-VFv">
@@ -352,7 +355,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HD3-W6-jLK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1564" y="654"/>
+            <point key="canvasLocation" x="1732" y="404"/>
+        </scene>
+        <!--Anxiety View Controller-->
+        <scene sceneID="jlw-Qj-tNa">
+            <objects>
+                <viewController id="e51-w7-iS3" customClass="AnxietyViewController" customModule="Defuse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="302-Y5-WV6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="7kW-lH-o4p"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ePt-8p-tVB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Oh-Ys-Xvh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2187" y="1003"/>
         </scene>
     </scenes>
     <resources>

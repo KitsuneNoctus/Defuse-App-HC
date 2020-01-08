@@ -16,6 +16,7 @@
 		3F7D906623C3DBF3006F9972 /* FidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D906523C3DBF3006F9972 /* FidgetViewController.swift */; };
 		3F7D906923C3EB7D006F9972 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7D906823C3EB7D006F9972 /* AVFoundation.framework */; };
 		3F7D906B23C3ECEC006F9972 /* switchSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F7D906A23C3ECEC006F9972 /* switchSound.mp3 */; };
+		3F7D906D23C64F38006F9972 /* AnxietyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D906C23C64F38006F9972 /* AnxietyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3F7D906523C3DBF3006F9972 /* FidgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FidgetViewController.swift; sourceTree = "<group>"; };
 		3F7D906823C3EB7D006F9972 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3F7D906A23C3ECEC006F9972 /* switchSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = switchSound.mp3; path = ../../switchSound.mp3; sourceTree = "<group>"; };
+		3F7D906C23C64F38006F9972 /* AnxietyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 		3F7D904523C3C3B3006F9972 = {
 			isa = PBXGroup;
 			children = (
+				3F7D906C23C64F38006F9972 /* AnxietyViewController.swift */,
 				3F7D905023C3C3B3006F9972 /* Defuse */,
 				3F7D904F23C3C3B3006F9972 /* Products */,
 				3F7D906723C3EB7D006F9972 /* Frameworks */,
@@ -159,6 +162,7 @@
 			files = (
 				3F7D905623C3C3B3006F9972 /* ViewController.swift in Sources */,
 				3F7D905223C3C3B3006F9972 /* AppDelegate.swift in Sources */,
+				3F7D906D23C64F38006F9972 /* AnxietyViewController.swift in Sources */,
 				3F7D905423C3C3B3006F9972 /* SceneDelegate.swift in Sources */,
 				3F7D906623C3DBF3006F9972 /* FidgetViewController.swift in Sources */,
 			);
