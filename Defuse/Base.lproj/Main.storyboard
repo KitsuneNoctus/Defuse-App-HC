@@ -133,20 +133,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ov1-wu-crL">
-                                <rect key="frame" x="20" y="404" width="374" height="392"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="q85-a7-aWD" kind="embed" id="1Cf-1S-T1z"/>
-                                </connections>
-                            </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bO1-mI-FaF">
-                                <rect key="frame" x="20" y="404" width="374" height="392"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="Byn-UR-au0" kind="embed" id="sf6-aD-TCL"/>
-                                </connections>
-                            </containerView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="svo-TU-MfU">
                                 <rect key="frame" x="125" y="110" width="165" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -195,40 +181,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bwe-Ol-Hu6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
-        </scene>
-        <!--Fidget View Controller-->
-        <scene sceneID="ucT-Q8-S5c">
-            <objects>
-                <viewController id="q85-a7-aWD" customClass="FidgetViewController" customModule="Defuse" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" alpha="0.5" contentMode="scaleToFill" id="xjC-sW-RZE">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="392"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.79794647300318755" green="0.95933517339684804" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <connections>
-                        <outlet property="BubbleView" destination="xjC-sW-RZE" id="XC0-Iu-WqM"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mai-dx-hax" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2271" y="688"/>
-        </scene>
-        <!--Fidget View Controller-->
-        <scene sceneID="VJ3-Q0-gmY">
-            <objects>
-                <viewController id="Byn-UR-au0" customClass="FidgetViewController" customModule="Defuse" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" alpha="0.5" contentMode="scaleToFill" id="sZD-g3-Gmc">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="392"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.92424682365347266" blue="0.92884442551486734" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <connections>
-                        <outlet property="keyView" destination="sZD-g3-Gmc" id="Fxb-1X-nYt"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vWU-3E-jKI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1593" y="688"/>
         </scene>
     </scenes>
 </document>

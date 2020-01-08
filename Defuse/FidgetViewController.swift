@@ -20,8 +20,8 @@ class FidgetViewController: UIViewController {
     @IBOutlet weak var aButton: UIButton!
     @IBOutlet weak var aButtonLabel: UILabel!
     //IBOutlest for screens views
-    @IBOutlet weak var BubbleView: UIView!
-    @IBOutlet weak var keyView: UIView!
+//    @IBOutlet weak var BubbleView: UIView!
+//    @IBOutlet weak var keyView: UIView!
     
     let aLabelWordList = ["They're","There","Their","your","you're","bear","bare","angle","angel"]
     
@@ -64,11 +64,11 @@ class FidgetViewController: UIViewController {
     }
     @IBAction func viewSegmentControlUsed(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0{
-            BubbleView.alpha == 0.5
-            keyView.alpha == 0
+//            BubbleView.alpha == 0.5
+//            keyView.alpha == 0
         }else{
-            BubbleView.alpha == 0
-            keyView.alpha == 0.5
+//            BubbleView.alpha == 0
+//            keyView.alpha == 0.5
         }
     }
     
