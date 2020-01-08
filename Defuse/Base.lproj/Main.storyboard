@@ -215,7 +215,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="fO8-9N-Qhp">
                                         <rect key="frame" x="0.0" y="0.0" width="248" height="47"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKI-PU-6X0" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKI-PU-6X0" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="47"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                 <state key="normal" image="circle.fill" catalog="system">

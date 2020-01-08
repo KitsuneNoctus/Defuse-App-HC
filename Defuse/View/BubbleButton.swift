@@ -9,9 +9,9 @@
 import UIKit
 
 class BubbleButton: UIButton {
-
+    //Mostly with help from an instructor
     override func awakeFromNib() {
-        setImage(UIImage(named: "bubbleImage"), for: .normal)
+        setImage(UIImage(named: "theBubbleImage"), for: .normal)
         self.addTarget(self, action: #selector(popBubble), for: UIControl.Event.touchUpInside)
     }
     
