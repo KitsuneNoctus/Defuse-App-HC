@@ -145,14 +145,14 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gv4-iz-Bd8">
-                                <rect key="frame" x="82" y="438" width="250" height="250"/>
+                                <rect key="frame" x="57" y="441" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="1iD-fO-lSE" kind="embed" id="v4C-4t-MVf"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aJf-Yj-sIg">
-                                <rect key="frame" x="82" y="438" width="250" height="250"/>
+                                <rect key="frame" x="57" y="441" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="XhO-A7-7P5" kind="embed" id="iHd-US-WJ7"/>
@@ -203,28 +203,28 @@
             <objects>
                 <viewController id="XhO-A7-7P5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NDr-TM-rcU">
-                        <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.79794647299999999" green="0.95933517339999996" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tsq-ui-LtX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2370" y="674"/>
+            <point key="canvasLocation" x="2212" y="654"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xJT-Zs-VFv">
             <objects>
                 <viewController id="1iD-fO-lSE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pon-eq-bii">
-                        <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.9242468237" blue="0.92884442550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HD3-W6-jLK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1812" y="674"/>
+            <point key="canvasLocation" x="1564" y="654"/>
         </scene>
     </scenes>
 </document>

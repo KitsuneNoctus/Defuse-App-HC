@@ -64,11 +64,11 @@ class FidgetViewController: UIViewController {
     }
     @IBAction func viewSegmentControlUsed(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0{
-//            BubbleView.alpha == 0.5
-//            keyView.alpha == 0
+            BubbleView.alpha = 1
+            keyView.alpha = 0
         }else{
-//            BubbleView.alpha == 0
-//            keyView.alpha == 0.5
+            BubbleView.alpha = 0
+            keyView.alpha = 1
         }
     }
     
