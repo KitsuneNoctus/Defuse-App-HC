@@ -7,13 +7,26 @@
 //
 
 import UIKit
+import AVFoundation
 
 class KeySubViewController: FidgetViewController {
-
+    @IBOutlet weak var testSwitch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    @IBAction func testSwitchUse(_ sender: Any) {
+        let path = Bundle.main.path(forResource: "clickSound.mp3", ofType:nil)!
+        let url = URL(fileURLWithPath: path)
+
+        do {
+            soundEffect = try AVAudioPlayer(contentsOf: url)
+            soundEffect?.play()
+        } catch {
+            // couldn't load file :(
+        }
     }
     
 
