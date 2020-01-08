@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import AVFoundation
 
 class BubbleButton: UIButton {
+    var soundEffect: AVAudioPlayer?
     //Mostly with help from an instructor
     override func awakeFromNib() {
         setImage(UIImage(named: "theBubbleImage"), for: .normal)
@@ -16,7 +18,15 @@ class BubbleButton: UIButton {
     }
     
     @objc func popBubble(sender: UIButton){
-        print("Pop")
+        let path = Bundle.main.path(forResource: "switchSound.mp3", ofType:nil)!
+        let url = URL(fileURLWithPath: path)
+
+        do {
+            soundEffect = try AVAudioPlayer(contentsOf: url)
+            soundEffect?.play()
+        } catch {
+            // couldn't load file :(
+        }
     }
     
     

@@ -414,13 +414,196 @@
                         <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1y-Zi-9h2">
-                                <rect key="frame" x="54" y="28" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0H3-eE-uvT">
+                                <rect key="frame" x="26" y="32" width="248" height="236"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="IZr-qB-cBS">
+                                        <rect key="frame" x="0.0" y="0.0" width="248" height="47"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvl-GM-Tqi" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="47"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qnb-0f-eEz" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="52" y="0.0" width="40" height="47"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iyv-xx-Fzh" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="104" y="0.0" width="40" height="47"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gQ-Sn-MVl" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="156" y="0.0" width="40" height="47"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zet-EW-99D" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="208" y="0.0" width="40" height="47"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="bVd-5n-EAi">
+                                        <rect key="frame" x="0.0" y="47" width="248" height="47.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHE-Sg-sUP" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="47.5"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIz-RN-IBG" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="52" y="0.0" width="40" height="47.5"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YM-0J-fZJ" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="104" y="0.0" width="40" height="47.5"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4G-5I-crL" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="156" y="0.0" width="40" height="47.5"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uG4-bh-lJo" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="208" y="0.0" width="40" height="47.5"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="YjL-xv-28Y">
+                                        <rect key="frame" x="0.0" y="94.5" width="248" height="47"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWE-6X-TaB" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="47"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKT-xG-OlM" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="52" y="0.0" width="40" height="47"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCA-oN-1Bo" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="104" y="0.0" width="40" height="47"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qc-rh-FFr" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="156" y="0.0" width="40" height="47"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eQ-SN-N1C" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="208" y="0.0" width="40" height="47"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="zRp-yE-z1e">
+                                        <rect key="frame" x="0.0" y="141.5" width="248" height="47.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6D-xw-vhk" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="47.5"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRj-W7-K0m" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="52" y="0.0" width="40" height="47.5"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5H-on-TZI" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="104" y="0.0" width="40" height="47.5"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqT-or-ydV" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="156" y="0.0" width="40" height="47.5"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASq-Hc-OXd" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="208" y="0.0" width="40" height="47.5"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="RY8-4g-Bna">
+                                        <rect key="frame" x="0.0" y="189" width="248" height="47"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7o-To-itg" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="47"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6B-6c-DRd" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="52" y="0.0" width="40" height="47"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyS-rW-iX3" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="104" y="0.0" width="40" height="47"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsX-mQ-TBb" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="156" y="0.0" width="40" height="47"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljx-jo-nxT" customClass="BubbleButton" customModule="Defuse" customModuleProvider="target">
+                                                <rect key="frame" x="208" y="0.0" width="40" height="47"/>
+                                                <state key="normal" image="circle.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.9242468237" blue="0.92884442550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="0H3-eE-uvT" secondAttribute="bottom" constant="10" id="5Ev-Yx-IMy"/>
+                            <constraint firstItem="0H3-eE-uvT" firstAttribute="leading" secondItem="Pon-eq-bii" secondAttribute="leadingMargin" constant="10" id="C7F-A7-RfD"/>
+                            <constraint firstItem="0H3-eE-uvT" firstAttribute="top" secondItem="Pon-eq-bii" secondAttribute="topMargin" constant="10" id="n1N-HA-ZB8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0H3-eE-uvT" secondAttribute="trailing" constant="10" id="x2Y-JE-QnD"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HD3-W6-jLK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
