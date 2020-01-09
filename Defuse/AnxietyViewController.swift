@@ -38,6 +38,8 @@ class AnxietyViewController: UIViewController {
                     if self.timeLeft <= 0{
                         self.timeLeft = 30
                         colorVal = 0
+                        colorVal += 0.1
+                        colorVal = colorVal * -1
         
                     }
                     self.timeLeft -= 1
