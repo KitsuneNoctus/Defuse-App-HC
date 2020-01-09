@@ -17,7 +17,7 @@ class AngerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        backgroundColours = [UIColor.orange, UIColor.blue, UIColor.yellow]
+        backgroundColours = [UIColor(red:0.79, green:0.96, blue:0.80, alpha:1.0), UIColor.blue, UIColor.yellow]
         backgroundLoop = 0
         self.animateBackgroundColour()
 
