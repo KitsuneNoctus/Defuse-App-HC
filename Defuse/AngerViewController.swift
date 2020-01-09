@@ -30,7 +30,7 @@ class AngerViewController: UIViewController {
         } else {
             backgroundLoop = 0
         }
-        UIView.animate(withDuration: 1, delay: 0, options: UIView.AnimationOptions.allowUserInteraction, animations: { () -> Void in
+        UIView.animate(withDuration: 4, delay: 0, options: UIView.AnimationOptions.allowUserInteraction, animations: { () -> Void in
                 self.view.backgroundColor =  self.backgroundColours[self.backgroundLoop];
             }) {(Bool) -> Void in
                 self.animateBackgroundColour();
