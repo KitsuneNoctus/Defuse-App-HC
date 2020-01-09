@@ -14,24 +14,36 @@ class AnxietyViewController: UIViewController {
     //Timer
     var timer: Timer?
     var timeLeft: Double = 30
-//    var timerTic:Timer!
-//    var num = 0.1
-//    var timeLike = 0
+    
+    //Color and loop
+    var backgroundColors = [UIColor()]
+    var backgroundLoop = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timeBackgroundChanger()
+        //timeBackgroundChanger()
         
-//        timerTic = Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector(("setBackgroundColor")), userInfo: nil, repeats: true)
-        //self.setBackgroundColor()
-//        updateColor()
+        backgroundColors = [UIColor.purple, UIColor.blue, UIColor.systemPink]
+        backgroundLoop = 0
+        self.animateBackgroundColor()
         
-//        view.backgroundColor = UIColor(red:CGFloat.random(in:0..<1),green:0,blue:0.5,alpha: 1)
-
-        // Do any additional setup after loading the view.
+    }
+    
+    func animateBackgroundColor(){
+        if backgroundLoop < backgroundColors.count - 1 {
+            backgroundLoop += 1
+        } else {
+            backgroundLoop = 0
+        }
+        UIView.animate(withDuration: 4, delay: 0, options: UIView.AnimationOptions.allowUserInteraction, animations: { () -> Void in
+            self.view.backgroundColor = self.backgroundColors[self.backgroundLoop]
+        }) {(Bool) -> Void in
+            self.animateBackgroundColor();
+        }
     }
     
     func timeBackgroundChanger(){
+        /* Using time to change background colors | No longer in use*/
         var colorVal:Double = 0
         timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { timerChange in
             colorVal += 0.1
