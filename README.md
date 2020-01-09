@@ -8,7 +8,6 @@ etc.
 
 ## Description
 A simple app with that has a user firendly menu that allows one to choose the tool to help them with what they're dealing with. 
-![Image](screen1.png =250x)
 <img src = "screen1.png" width=200 height = 400>
 
 ### For the User
