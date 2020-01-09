@@ -24,6 +24,7 @@
 		3F7D907823C68ABF006F9972 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D907723C68ABF006F9972 /* CircleImageView.swift */; };
 		3F7D907A23C69028006F9972 /* BubbleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D907923C69028006F9972 /* BubbleButton.swift */; };
 		3F7D907C23C6A6C4006F9972 /* popishSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F7D907B23C6A6C4006F9972 /* popishSound.mp3 */; };
+		3F7D907E23C6FB47006F9972 /* AngerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D907D23C6FB47006F9972 /* AngerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		3F7D907723C68ABF006F9972 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		3F7D907923C69028006F9972 /* BubbleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleButton.swift; sourceTree = "<group>"; };
 		3F7D907B23C6A6C4006F9972 /* popishSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = popishSound.mp3; path = ../../../../../../Downloads/popishSound.mp3; sourceTree = "<group>"; };
+		3F7D907D23C6FB47006F9972 /* AngerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				3F7D907223C67D7B006F9972 /* KeySubViewController.swift */,
 				3F7D906C23C64F38006F9972 /* AnxietyViewController.swift */,
 				3F7D905723C3C3B3006F9972 /* Main.storyboard */,
+				3F7D907D23C6FB47006F9972 /* AngerViewController.swift */,
 				3F7D907423C68203006F9972 /* BubbleSubViewController.swift */,
 				3F7D907023C6629C006F9972 /* crackSoud.mp3 */,
 				3F7D906E23C65F58006F9972 /* clickSound.mp3 */,
@@ -196,6 +199,7 @@
 				3F7D907823C68ABF006F9972 /* CircleImageView.swift in Sources */,
 				3F7D905623C3C3B3006F9972 /* ViewController.swift in Sources */,
 				3F7D907523C68203006F9972 /* BubbleSubViewController.swift in Sources */,
+				3F7D907E23C6FB47006F9972 /* AngerViewController.swift in Sources */,
 				3F7D905223C3C3B3006F9972 /* AppDelegate.swift in Sources */,
 				3F7D906D23C64F38006F9972 /* AnxietyViewController.swift in Sources */,
 				3F7D905423C3C3B3006F9972 /* SceneDelegate.swift in Sources */,

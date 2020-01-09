@@ -613,10 +613,10 @@
             </objects>
             <point key="canvasLocation" x="1732" y="404"/>
         </scene>
-        <!--View Controller-->
+        <!--Anger View Controller-->
         <scene sceneID="tXf-QC-se4">
             <objects>
-                <viewController id="ehC-rT-uQY" sceneMemberID="viewController">
+                <viewController id="ehC-rT-uQY" customClass="AngerViewController" customModule="Defuse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GTP-yU-ICB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
