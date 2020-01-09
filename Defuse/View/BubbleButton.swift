@@ -18,7 +18,10 @@ class BubbleButton: UIButton {
     }
     
     @objc func popBubble(sender: UIButton){
-        let path = Bundle.main.path(forResource: "switchSound.mp3", ofType:nil)!
+        //This is slower than just putting the sound in path use ---
+        var aSound = "popishSound.mp3"
+        let path = Bundle.main.path(forResource: aSound, ofType:nil)!
+        // ----^-----
         let url = URL(fileURLWithPath: path)
 
         do {
