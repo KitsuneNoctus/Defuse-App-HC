@@ -53,6 +53,9 @@
                                 <state key="normal" title="Anger">
                                     <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ehC-rT-uQY" kind="show" id="nEX-KQ-suQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVc-ue-iXO">
                                 <rect key="frame" x="178.5" y="645" width="57" height="34"/>
@@ -610,6 +613,22 @@
             </objects>
             <point key="canvasLocation" x="1732" y="404"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="tXf-QC-se4">
+            <objects>
+                <viewController id="ehC-rT-uQY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GTP-yU-ICB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="xoR-dP-4HW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5e0-7J-3L7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6YO-uq-oFB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1168" y="978"/>
+        </scene>
         <!--Anxiety View Controller-->
         <scene sceneID="jlw-Qj-tNa">
             <objects>
@@ -620,11 +639,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="7kW-lH-o4p"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ePt-8p-tVB"/>
+                    <navigationItem key="navigationItem" id="ePt-8p-tVB">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="CjM-fj-VH0"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Oh-Ys-Xvh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2187" y="1003"/>
+            <point key="canvasLocation" x="2496" y="979"/>
         </scene>
     </scenes>
     <resources>
