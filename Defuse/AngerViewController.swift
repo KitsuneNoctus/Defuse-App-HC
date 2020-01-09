@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class AngerViewController: UIViewController {
     //This is for the anger view
@@ -14,14 +15,31 @@ class AngerViewController: UIViewController {
     //https://stackoverflow.com/questions/32287237/gradually-change-background-color-in-swift
     var backgroundColours = [UIColor()]
     var backgroundLoop = 0
+    
+    var music: AVAudioPlayer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         backgroundColours = [UIColor(red:0.79, green:0.96, blue:0.80, alpha:1.0), UIColor(red:0.82, green:0.69, blue:0.97, alpha:1.0), UIColor(red:0.75, green:0.94, blue:0.98, alpha:1.0), UIColor(red:0.95, green:0.95, blue:0.87, alpha:1.0), UIColor(red:0.97, green:0.87, blue:0.90, alpha:1.0)]
         backgroundLoop = 0
         self.animateBackgroundColour()
+        playBackgroundMusic()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func playBackgroundMusic(){
+        let path = Bundle.main.path(forResource: "calmUkulele.mp3", ofType:nil)!
+        let url = URL(fileURLWithPath: path)
+
+        do {
+            music = try AVAudioPlayer(contentsOf: url)
+            music?.numberOfLoops = -1
+            music?.play()
+//            music?.numberOfLoops = -1
+        } catch {
+            // couldn't load file :(
+        }
     }
     
     func animateBackgroundColour () {

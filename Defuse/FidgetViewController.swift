@@ -33,7 +33,7 @@ class FidgetViewController: UIViewController {
     var soundEffect: AVAudioPlayer?
     var redValue = CGFloat.random(in:0..<1)
     
-//    =================================================
+//========================================================
     override func viewDidLoad() {
         super.viewDidLoad()
 //        var lastStepperOneValue = Int(stepperOne.value)
