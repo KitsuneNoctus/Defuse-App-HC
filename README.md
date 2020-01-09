@@ -1,5 +1,6 @@
-## App Name: Defuse
-Purpose: Help people defuse excess enegry or negative emtions:
+# App Name: Defuse
+## Purpose: Help people defuse excess enegry or negative emtions:
+
 - Fidgeting
 - Anxiety
 - Anger
