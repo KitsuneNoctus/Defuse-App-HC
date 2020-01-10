@@ -21,9 +21,10 @@ Simple Menu Start Screen where you choose between the Options available
 
 ### How to Install the App
 > *Currently not on the App Store*
-> *Can Download from Creators Computer if asked*
+
+> * Can Download from Creators Computer if asked*
 
 ###### GitHub
-[links](https://github.com/KitsuneNoctus/Defuse-App-HC)
+[Repository](https://github.com/KitsuneNoctus/Defuse-App-HC)
 
 
