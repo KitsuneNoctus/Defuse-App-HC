@@ -7,7 +7,8 @@
 etc.
 
 ## Description
-A simple app with that has a user firendly menu that allows one to choose the tool to help them with what they're dealing with. 
+A simple app with that has a user firendly menu that allows one to choose the tool to help them with what they're dealing with emotionally for that moment. 
+!IMPORTANT! This is not meant as an actual fix to problems, only to help an individual calm down and relax.
 
 Views
 ---
