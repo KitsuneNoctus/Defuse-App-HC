@@ -19,15 +19,37 @@ class AnxietyViewController: UIViewController {
     var backgroundColors = [UIColor()]
     var backgroundLoop = 0
     
+    //Music
+    var music: AVAudioPlayer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //timeBackgroundChanger()
         
-        backgroundColors = [UIColor.purple, UIColor.blue, UIColor.systemPink]
+        backgroundColors = [UIColor.purple, UIColor.blue, UIColor(red:0.97, green:0.87, blue:0.90, alpha:1.0)]
         backgroundLoop = 0
         self.animateBackgroundColor()
+        playBackgroundMusic()
         
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        music?.stop()
+    }
+    
+    func playBackgroundMusic(){
+            let path = Bundle.main.path(forResource: "chillSong.mp3", ofType:nil)!
+            let url = URL(fileURLWithPath: path)
+
+            do {
+                music = try AVAudioPlayer(contentsOf: url)
+                music?.numberOfLoops = -1
+                music?.play()
+    //            music?.numberOfLoops = -1
+            } catch {
+                // couldn't load file :(
+            }
+        }
     
     func animateBackgroundColor(){
         if backgroundLoop < backgroundColors.count - 1 {
@@ -41,7 +63,7 @@ class AnxietyViewController: UIViewController {
             self.animateBackgroundColor();
         }
     }
-    
+    //+====================The Old Stuff=================
     func timeBackgroundChanger(){
         /* Using time to change background colors | No longer in use*/
         var colorVal:Double = 0

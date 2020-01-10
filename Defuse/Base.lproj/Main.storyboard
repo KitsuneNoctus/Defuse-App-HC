@@ -713,7 +713,7 @@
                         <viewLayoutGuide key="safeArea" id="7kW-lH-o4p"/>
                     </view>
                     <navigationItem key="navigationItem" id="ePt-8p-tVB">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="CjM-fj-VH0"/>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Note" id="CjM-fj-VH0"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Oh-Ys-Xvh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

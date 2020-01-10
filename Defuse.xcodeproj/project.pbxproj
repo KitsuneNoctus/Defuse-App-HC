@@ -26,6 +26,7 @@
 		3F7D907C23C6A6C4006F9972 /* popishSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F7D907B23C6A6C4006F9972 /* popishSound.mp3 */; };
 		3F7D907E23C6FB47006F9972 /* AngerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D907D23C6FB47006F9972 /* AngerViewController.swift */; };
 		3F7D908023C7D590006F9972 /* calmUkulele.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F7D907F23C7D590006F9972 /* calmUkulele.mp3 */; };
+		3F7D90EF23C8403B006F9972 /* chillSong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F7D90EE23C8403B006F9972 /* chillSong.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		3F7D907B23C6A6C4006F9972 /* popishSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = popishSound.mp3; path = ../../../../../../Downloads/popishSound.mp3; sourceTree = "<group>"; };
 		3F7D907D23C6FB47006F9972 /* AngerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngerViewController.swift; sourceTree = "<group>"; };
 		3F7D907F23C7D590006F9972 /* calmUkulele.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = calmUkulele.mp3; path = ../../../../../Downloads/calmUkulele.mp3; sourceTree = "<group>"; };
+		3F7D90EE23C8403B006F9972 /* chillSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = chillSong.mp3; path = ../../../../../Downloads/chillSong.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				3F7D906523C3DBF3006F9972 /* FidgetViewController.swift */,
 				3F7D907223C67D7B006F9972 /* KeySubViewController.swift */,
 				3F7D906C23C64F38006F9972 /* AnxietyViewController.swift */,
+				3F7D90EE23C8403B006F9972 /* chillSong.mp3 */,
 				3F7D905723C3C3B3006F9972 /* Main.storyboard */,
 				3F7D907D23C6FB47006F9972 /* AngerViewController.swift */,
 				3F7D907F23C7D590006F9972 /* calmUkulele.mp3 */,
@@ -187,6 +190,7 @@
 				3F7D906B23C3ECEC006F9972 /* switchSound.mp3 in Resources */,
 				3F7D905E23C3C3B5006F9972 /* LaunchScreen.storyboard in Resources */,
 				3F7D905B23C3C3B5006F9972 /* Assets.xcassets in Resources */,
+				3F7D90EF23C8403B006F9972 /* chillSong.mp3 in Resources */,
 				3F7D907123C6629C006F9972 /* crackSoud.mp3 in Resources */,
 				3F7D905923C3C3B3006F9972 /* Main.storyboard in Resources */,
 			);
@@ -362,7 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.henrycalderon.Defuse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -380,7 +384,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.henrycalderon.Defuse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
