@@ -26,7 +26,7 @@ class AnxietyViewController: UIViewController {
         super.viewDidLoad()
         //timeBackgroundChanger()
         
-        backgroundColors = [UIColor.purple, UIColor.blue, UIColor(red:0.97, green:0.87, blue:0.90, alpha:1.0)]
+        backgroundColors = [UIColor(red:0.99, green:1.00, blue:0.65, alpha:1.0), UIColor(red:0.93, green:0.76, blue:0.97, alpha:1.0), UIColor(red:0.75, green:0.80, blue:0.94, alpha:1.0), UIColor(red:0.97, green:0.87, blue:0.90, alpha:1.0)]
         backgroundLoop = 0
         self.animateBackgroundColor()
         playBackgroundMusic()
