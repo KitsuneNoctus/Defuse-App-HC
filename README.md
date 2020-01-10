@@ -9,8 +9,11 @@ etc.
 ## Description
 A simple app with that has a user firendly menu that allows one to choose the tool to help them with what they're dealing with. 
 
+Views
 ---
 <img src = "screen1.png" width=200 height = 400>
+<img src = "screen2.png" width=200 height = 400>
+<img src = "screen3.png" width=200 height = 400>
 
 ### For the User
 
