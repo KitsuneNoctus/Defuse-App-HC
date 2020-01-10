@@ -47,6 +47,10 @@ class FidgetViewController: UIViewController {
         view.backgroundColor = UIColor(red: redValue, green: 1-CGFloat(sender.value), blue: CGFloat(sender.value), alpha: 1)
     }
     @IBAction func switchValueChanged(_ sender: UISwitch) {
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.prepare()
+        generator.impactOccurred()
+        
         let path = Bundle.main.path(forResource: "switchSound.mp3", ofType:nil)!
         let url = URL(fileURLWithPath: path)
 
