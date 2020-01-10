@@ -28,6 +28,10 @@ class AngerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        music?.stop()
+    }
+    
     func playBackgroundMusic(){
         let path = Bundle.main.path(forResource: "calmUkulele.mp3", ofType:nil)!
         let url = URL(fileURLWithPath: path)
