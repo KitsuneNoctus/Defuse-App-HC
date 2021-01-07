@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F64FB5025A790BE00898DEC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64FB4F25A790BE00898DEC /* HomeViewController.swift */; };
+		3F64FB5325A7918F00898DEC /* FidgetToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64FB5225A7918F00898DEC /* FidgetToolViewController.swift */; };
+		3F64FB5625A791AE00898DEC /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64FB5525A791AE00898DEC /* EmotionViewController.swift */; };
+		3F64FB5925A7921700898DEC /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64FB5825A7921700898DEC /* NotesViewController.swift */; };
+		3F64FB5C25A7922E00898DEC /* HomeExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64FB5B25A7922E00898DEC /* HomeExtensionViewController.swift */; };
 		3F7D905223C3C3B3006F9972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D905123C3C3B3006F9972 /* AppDelegate.swift */; };
 		3F7D905423C3C3B3006F9972 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D905323C3C3B3006F9972 /* SceneDelegate.swift */; };
 		3F7D905623C3C3B3006F9972 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D905523C3C3B3006F9972 /* ViewController.swift */; };
@@ -30,6 +35,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F64FB4725A78F0F00898DEC /* switchSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = switchSound.mp3; sourceTree = "<group>"; };
+		3F64FB4825A78F1600898DEC /* chillSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chillSong.mp3; sourceTree = "<group>"; };
+		3F64FB4925A78F1B00898DEC /* calmUkulele.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = calmUkulele.mp3; sourceTree = "<group>"; };
+		3F64FB4A25A78F3A00898DEC /* clickSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clickSound.mp3; sourceTree = "<group>"; };
+		3F64FB4B25A78F4800898DEC /* crackSoud.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crackSoud.mp3; sourceTree = "<group>"; };
+		3F64FB4F25A790BE00898DEC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3F64FB5225A7918F00898DEC /* FidgetToolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FidgetToolViewController.swift; sourceTree = "<group>"; };
+		3F64FB5525A791AE00898DEC /* EmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
+		3F64FB5825A7921700898DEC /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		3F64FB5B25A7922E00898DEC /* HomeExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeExtensionViewController.swift; sourceTree = "<group>"; };
 		3F7D904E23C3C3B3006F9972 /* Defuse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Defuse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7D905123C3C3B3006F9972 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F7D905323C3C3B3006F9972 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +81,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F64FB4425A78EF100898DEC /* Old Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F7D906523C3DBF3006F9972 /* FidgetViewController.swift */,
+				3F7D907D23C6FB47006F9972 /* AngerViewController.swift */,
+				3F7D907223C67D7B006F9972 /* KeySubViewController.swift */,
+				3F7D907423C68203006F9972 /* BubbleSubViewController.swift */,
+				3F7D906C23C64F38006F9972 /* AnxietyViewController.swift */,
+			);
+			path = "Old Controllers";
+			sourceTree = "<group>";
+		};
+		3F64FB4525A78EFD00898DEC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F64FB6025A7937300898DEC /* Cells */,
+				3F64FB5E25A7923300898DEC /* SubViews */,
+				3F64FB4F25A790BE00898DEC /* HomeViewController.swift */,
+				3F64FB5225A7918F00898DEC /* FidgetToolViewController.swift */,
+				3F64FB5525A791AE00898DEC /* EmotionViewController.swift */,
+				3F64FB5825A7921700898DEC /* NotesViewController.swift */,
+				3F64FB5B25A7922E00898DEC /* HomeExtensionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3F64FB4625A78F0900898DEC /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				3F64FB4925A78F1B00898DEC /* calmUkulele.mp3 */,
+				3F64FB4A25A78F3A00898DEC /* clickSound.mp3 */,
+				3F64FB4725A78F0F00898DEC /* switchSound.mp3 */,
+				3F64FB4B25A78F4800898DEC /* crackSoud.mp3 */,
+				3F64FB4825A78F1600898DEC /* chillSong.mp3 */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		3F64FB5E25A7923300898DEC /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		3F64FB5F25A7932300898DEC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		3F64FB6025A7937300898DEC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		3F7D904523C3C3B3006F9972 = {
 			isa = PBXGroup;
 			children = (
@@ -86,20 +160,19 @@
 		3F7D905023C3C3B3006F9972 /* Defuse */ = {
 			isa = PBXGroup;
 			children = (
+				3F64FB5F25A7932300898DEC /* CoreData */,
+				3F64FB4625A78F0900898DEC /* Media */,
+				3F64FB4525A78EFD00898DEC /* Controllers */,
+				3F64FB4425A78EF100898DEC /* Old Controllers */,
 				3F7D907623C68A99006F9972 /* View */,
 				3F7D906A23C3ECEC006F9972 /* switchSound.mp3 */,
+				3F7D907023C6629C006F9972 /* crackSoud.mp3 */,
 				3F7D905123C3C3B3006F9972 /* AppDelegate.swift */,
 				3F7D905323C3C3B3006F9972 /* SceneDelegate.swift */,
 				3F7D905523C3C3B3006F9972 /* ViewController.swift */,
-				3F7D906523C3DBF3006F9972 /* FidgetViewController.swift */,
-				3F7D907223C67D7B006F9972 /* KeySubViewController.swift */,
-				3F7D906C23C64F38006F9972 /* AnxietyViewController.swift */,
+				3F7D907F23C7D590006F9972 /* calmUkulele.mp3 */,
 				3F7D90EE23C8403B006F9972 /* chillSong.mp3 */,
 				3F7D905723C3C3B3006F9972 /* Main.storyboard */,
-				3F7D907D23C6FB47006F9972 /* AngerViewController.swift */,
-				3F7D907F23C7D590006F9972 /* calmUkulele.mp3 */,
-				3F7D907423C68203006F9972 /* BubbleSubViewController.swift */,
-				3F7D907023C6629C006F9972 /* crackSoud.mp3 */,
 				3F7D906E23C65F58006F9972 /* clickSound.mp3 */,
 				3F7D905A23C3C3B5006F9972 /* Assets.xcassets */,
 				3F7D905C23C3C3B5006F9972 /* LaunchScreen.storyboard */,
@@ -207,10 +280,15 @@
 				3F7D907823C68ABF006F9972 /* CircleImageView.swift in Sources */,
 				3F7D905623C3C3B3006F9972 /* ViewController.swift in Sources */,
 				3F7D907523C68203006F9972 /* BubbleSubViewController.swift in Sources */,
+				3F64FB5625A791AE00898DEC /* EmotionViewController.swift in Sources */,
 				3F7D907E23C6FB47006F9972 /* AngerViewController.swift in Sources */,
+				3F64FB5C25A7922E00898DEC /* HomeExtensionViewController.swift in Sources */,
 				3F7D905223C3C3B3006F9972 /* AppDelegate.swift in Sources */,
 				3F7D906D23C64F38006F9972 /* AnxietyViewController.swift in Sources */,
+				3F64FB5025A790BE00898DEC /* HomeViewController.swift in Sources */,
 				3F7D905423C3C3B3006F9972 /* SceneDelegate.swift in Sources */,
+				3F64FB5925A7921700898DEC /* NotesViewController.swift in Sources */,
+				3F64FB5325A7918F00898DEC /* FidgetToolViewController.swift in Sources */,
 				3F7D906623C3DBF3006F9972 /* FidgetViewController.swift in Sources */,
 				3F7D907323C67D7B006F9972 /* KeySubViewController.swift in Sources */,
 			);
@@ -359,6 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VH946FT2M;
 				INFOPLIST_FILE = Defuse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -377,6 +456,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VH946FT2M;
 				INFOPLIST_FILE = Defuse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
